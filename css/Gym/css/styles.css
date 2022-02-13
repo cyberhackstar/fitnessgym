@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "Muli", sans-serif;
+}
+
+/* Header section */
+.header-section {
+  position: absolute;
+  left: 0;
+  padding: 55px 15px 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.col {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.col-1 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.logo img {
+  width: 50%;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+}
+
+.top-option {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Price section */
+.price-section {
+  background: #151515;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.row {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin: 0 -15px;
+}
+
+.col {
+  position: relative;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .col {
+    flex: 0 0 66.6%;
+    max-width: 66.6%;
+  }
+
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-with: 768px) {
+  .col {
+    flex: 0 0 66.6%;
+    max-width: 66.6%;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-with: 992px) {
+  .col {
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+  }
+
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    min-width: 1170px;
+  }
+}
